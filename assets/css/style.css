@@ -1,0 +1,55 @@
+p {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: purple;
+}
+
+h3 {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 30px;
+}
+
+h1 {
+	font-size: 60px;
+	font-family: 'Press Start 2P', cursive;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: 'Press Start 2P', cursive;
+}
+
+body {
+	background-image: url("sand.jpg")
+}
+
+img {
+	height:60px;
+	width:60px;
+	border:2px solid black;
+	border-radius: 10px
+}
+
+img:hover {
+	cursor: pointer;
+	box-shadow: 2px 2px 10px black;
+}
+
+img:active {
+	box-shadow: 1px 1px 5px black;
+}
+
+h1, h2 {
+	text-shadow: 2px 2px lightblue;
+}
+
+.instructions {
+	display: none;
+	background-color: white;
+}
+
+.dropDown:hover {
+	cursor: pointer;
+}
+

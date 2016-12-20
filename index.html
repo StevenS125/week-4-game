@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Game</title>
+
+	<!-- Linking jQuery -->
+	<script src="jquery-3.1.1.js.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+<!-- Page Layout With Bootstrap -->
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<h1>Crystal Collector!</h1>
+			<h3 class="dropDown">Click for instructions!</h3>
+			<div class="instructions col-md-8 col-md-offset-2">
+				<p>You will be given a random number at the start of the game.</p>
+				<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+				<p>You win the game by matching your total score to the random number, you lose he game if your total score goes above the random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it.</p>
+				<p>Each time the game starts, the game will change the values of each crystal</p>
+			</div>
+		</div>
+	</div>
+<br><br>
+
+<div class="row">
+
+		<div class="col-md-6 text-center">
+			<div class="col-md-12">
+				<h2>Our Number: <span class="ourNumber"></h2>
+			</div>
+			<div class="col-md-12">
+				<h2>Your Current Number: <span class="currentNumber">0</span></h2>
+			</div>
+
+			<div class="col-md-12">
+			<br>
+			<br>
+				<div class="col-md-2 col-md-offset-2">
+					<img class="bluecrystal" src="assets/images/blue.jpg">
+				</div>
+				<div class="col-md-2">
+					<img class="redcrystal" src="assets/images/red.png">
+				</div>
+				<div class="col-md-2">
+					<img class="yellowcrystal" src="assets/images/yellow.jpg">
+				</div>
+				<div class="col-md-2">
+					<img class="greencrystal" src="assets/images/green.jpg">
+				</div>
+			</div>
+
+	</div>
+
+	
+	<div class="row">
+		<div class="col-md-6 text-center">
+			<h2>Wins: <span id="winsdisplay">0</span></h2>
+			<h2>Current Streak: <span id="currentstreakdisplay">0</span></h2>
+		</div>
+		<div class="col-md-6 text-center">
+			<h2>Losses: <span id="lossesdisplay">0</span></h2>
+			<h2>Longest Streak: <span id="longeststreakdisplay">0</span></h2>
+		</div>
+	</div>
+
+	<br>
+	<br>
+
+</div>
+<!-- link to my Javascript logic -->
+<script src='assets/javascript/game.js' type="text/javascript"></script>
+
+
+</body>
+</html>
